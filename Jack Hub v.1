@@ -51,6 +51,10 @@ local AutoBuyChicken = Instance.new("TextButton")
 local UICorner_24 = Instance.new("UICorner")
 local AutoBuyChocolate = Instance.new("TextButton")
 local UICorner_25 = Instance.new("UICorner")
+local AutoMango = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
+local AutoBuyMango = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
 
 
 
@@ -299,7 +303,7 @@ ToolEditor.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
 ToolEditor.Position = UDim2.new(0.371031761, 0, 0.219594598, 0)
 ToolEditor.Size = UDim2.new(0, 309, 0, 36)
 ToolEditor.Font = Enum.Font.Gotham
-ToolEditor.Text = "Tool Editor"
+ToolEditor.Text = "Fixing"
 ToolEditor.TextColor3 = Color3.fromRGB(255, 255, 255)
 ToolEditor.TextSize = 22.000
 Songoku.MouseButton1Down:connect(function()
@@ -328,10 +332,10 @@ A4.Name = "A4"
 A4.Parent = main
 A4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 A4.BackgroundTransparency = 1.000
-A4.Position = UDim2.new(0.351190358, 0, 0.625, 0)
-A4.Size = UDim2.new(0, 327, 0, 62)
+A4.Position = UDim2.new(0.36311096, 0, 0.793918908, 0)
+A4.Size = UDim2.new(0, 316, 0, 36)
 A4.Font = Enum.Font.Gotham
-A4.Text = "Other Features Coming Soon"
+A4.Text = "POP     POP     POP"
 A4.TextColor3 = Color3.fromRGB(255, 255, 255)
 A4.TextSize = 24.000
 
@@ -342,8 +346,8 @@ A5.Name = "A5"
 A5.Parent = main
 A5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 A5.BackgroundTransparency = 1.000
-A5.Position = UDim2.new(0.351190358, 0, 0.730471015, 0)
-A5.Size = UDim2.new(0, 327, 0, 54)
+A5.Position = UDim2.new(0.351190358, 0, 0.875741303, 0)
+A5.Size = UDim2.new(0, 327, 0, 41)
 A5.Font = Enum.Font.Gotham
 A5.Text = ":)"
 A5.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -463,3 +467,51 @@ end)
 
 UICorner_25.CornerRadius = UDim.new(0, 10)
 UICorner_25.Parent = AutoBuyChocolate
+
+AutoMango.Name = "AutoMango"
+AutoMango.Parent = main
+AutoMango.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+AutoMango.Position = UDim2.new(0.369051576, 0, 0.648648679, 0)
+AutoMango.Size = UDim2.new(0, 160, 0, 36)
+AutoMango.Font = Enum.Font.Gotham
+AutoMango.Text = "AutoMango"
+AutoMango.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoMango.TextSize = 22.000
+AutoChicken.MouseButton1Down:connect(function()
+	while wait() do
+		for i, v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+			if v.Name == "Mango Shake" then
+				if not game.Players.LocalPlayer:FindFirstChild("EnergyBoost") and not game.Players.LocalPlayer.Character:FindFirstChild("Mango Shake") then
+					v.Parent = game.Players.LocalPlayer.Character
+					game.Players.LocalPlayer.Character:FindFirstChild("Mango Shake"):Activate()
+				end
+			end
+		end
+	end
+end)
+
+UICorner_26.CornerRadius = UDim.new(0, 10)
+UICorner_26.Parent = AutoMango
+
+AutoBuyMango.Name = "AutoBuyMango"
+AutoBuyMango.Parent = main
+AutoBuyMango.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+AutoBuyMango.Position = UDim2.new(0.699744701, 0, 0.648648679, 0)
+AutoBuyMango.Size = UDim2.new(0, 142, 0, 36)
+AutoBuyMango.Font = Enum.Font.Gotham
+AutoBuyMango.Text = "AutoBuy"
+AutoBuyMango.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoBuyMango.TextSize = 22.000
+AutoBuyMango.MouseButton1Down:connect(function()
+	local chocolatepath = game.Workspace:FindFirstChild("Mango Shake $35", true).Parent["ClickDetector"]
+	coroutine.wrap(function()
+		while task.wait(.5) do
+			local s,e = pcall(function()
+				fireclickdetector(mangopath, 4)
+			end) 
+		end
+	end)()
+end)
+
+UICorner_27.CornerRadius = UDim.new(0, 10)
+UICorner_27.Parent = AutoBuyMango
