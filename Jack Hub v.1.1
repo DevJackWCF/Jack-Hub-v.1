@@ -1,0 +1,520 @@
+	--by JoJack#1826
+	
+	local ScreenGui = Instance.new("ScreenGui")
+	local main = Instance.new("Frame")
+	local title = Instance.new("TextLabel")
+	local UICorner = Instance.new("UICorner")
+	local A1 = Instance.new("TextLabel")
+	local UICorner_2 = Instance.new("UICorner")
+	local ScrollingFrame = Instance.new("ScrollingFrame")
+	local Hitman = Instance.new("TextButton")
+	local UICorner_3 = Instance.new("UICorner")
+	local Formless = Instance.new("TextButton")
+	local UICorner_4 = Instance.new("UICorner")
+	local Beast = Instance.new("TextButton")
+	local UICorner_5 = Instance.new("UICorner")
+	local AdvancedKarate = Instance.new("TextButton")
+	local UICorner_6 = Instance.new("UICorner")
+	local SubBlink = Instance.new("TextButton")
+	local UICorner_7 = Instance.new("UICorner")
+	local UICorner_8 = Instance.new("UICorner")
+	local Sung = Instance.new("TextButton")
+	local UICorner_9 = Instance.new("UICorner")
+	local FireGod = Instance.new("TextButton")
+	local UICorner_10 = Instance.new("UICorner")
+	local Advance = Instance.new("TextButton")
+	local UICorner_11 = Instance.new("UICorner")
+	local Ryu = Instance.new("TextButton")
+	local UICorner_12 = Instance.new("UICorner")
+	local Samurai = Instance.new("TextButton")
+	local UICorner_13 = Instance.new("UICorner")
+	local Songoku = Instance.new("TextButton")
+	local UICorner_14 = Instance.new("UICorner")
+	local UICorner_15 = Instance.new("UICorner")
+	local A2 = Instance.new("TextLabel")
+	local UICorner_16 = Instance.new("UICorner")
+	local ToolEditor = Instance.new("TextButton")
+	local UICorner_17 = Instance.new("UICorner")
+	local A3 = Instance.new("TextLabel")
+	local UICorner_18 = Instance.new("UICorner")
+	local A4 = Instance.new("TextLabel")
+	local UICorner_19 = Instance.new("UICorner")
+	local A5 = Instance.new("TextLabel")
+	local UICorner_20 = Instance.new("UICorner")
+	local close = Instance.new("TextButton")
+	local UICorner_21 = Instance.new("UICorner")
+	local AutoChicken = Instance.new("TextButton")
+	local UICorner_22 = Instance.new("UICorner")
+	local AutoChocolate = Instance.new("TextButton")
+	local UICorner_23 = Instance.new("UICorner")
+	local AutoBuyChicken = Instance.new("TextButton")
+	local UICorner_24 = Instance.new("UICorner")
+	local AutoBuyChocolate = Instance.new("TextButton")
+	local UICorner_25 = Instance.new("UICorner")
+	local AutoMango = Instance.new("TextButton")
+	local UICorner_26 = Instance.new("UICorner")
+	local AutoBuyMango = Instance.new("TextButton")
+	local UICorner_27 = Instance.new("UICorner")
+	
+	
+	
+	ScreenGui.Parent = game.CoreGui
+	
+	main.Name = "main"
+	main.Parent = ScreenGui
+	main.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+	main.Position = UDim2.new(0.0393939614, 0, 0.336196303, 0)
+	main.Size = UDim2.new(0, 505, 0, 296)
+	main.Active = true
+	main.Draggable = true
+	
+	title.Name = "title"
+	title.Parent = main
+	title.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+	title.Size = UDim2.new(0, 504, 0, 37)
+	title.Font = Enum.Font.Garamond
+	title.Text = "Jack Hub"
+	title.TextColor3 = Color3.fromRGB(255, 255, 255)
+	title.TextSize = 28.000
+	
+	UICorner.CornerRadius = UDim.new(0, 10)
+	UICorner.Parent = title
+	
+	A1.Name = "A1"
+	A1.Parent = main
+	A1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	A1.BackgroundTransparency = 1.000
+	A1.Position = UDim2.new(-0.0257936511, 0, 0.0743243247, 0)
+	A1.Size = UDim2.new(0, 200, 0, 50)
+	A1.Font = Enum.Font.Gotham
+	A1.Text = "Auto Get Styles/Modes:"
+	A1.TextColor3 = Color3.fromRGB(255, 255, 255)
+	A1.TextSize = 14.000
+	
+	UICorner_2.CornerRadius = UDim.new(0, 10)
+	UICorner_2.Parent = A1
+	
+	ScrollingFrame.Parent = main
+	ScrollingFrame.Active = true
+	ScrollingFrame.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+	ScrollingFrame.Position = UDim2.new(0, 0, 0.199324325, 0)
+	ScrollingFrame.Size = UDim2.new(0, 177, 0, 237)
+	ScrollingFrame.CanvasPosition = Vector2.new(0, 300)
+	
+	Hitman.Name = "Hitman"
+	Hitman.Parent = ScrollingFrame
+	Hitman.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+	Hitman.Position = UDim2.new(0.0119047621, 0, 0.0101351347, 0)
+	Hitman.Size = UDim2.new(0, 160, 0, 36)
+	Hitman.Font = Enum.Font.Gotham
+	Hitman.Text = "Hitman"
+	Hitman.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Hitman.TextSize = 22.000
+	Hitman.MouseButton1Down:connect(function()
+		game:GetService("ReplicatedStorage").RemoteEvent:FireServer("SpecialTrainer","Hitman")
+	end)
+	
+	UICorner_3.CornerRadius = UDim.new(0, 10)
+	UICorner_3.Parent = Hitman
+	
+	Formless.Name = "Formless"
+	Formless.Parent = ScrollingFrame
+	Formless.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+	Formless.Position = UDim2.new(0.0119047621, 0, 0.0810810849, 0)
+	Formless.Size = UDim2.new(0, 160, 0, 36)
+	Formless.Font = Enum.Font.Gotham
+	Formless.Text = "Formless"
+	Formless.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Formless.TextSize = 22.000
+	Formless.MouseButton1Down:connect(function()
+		game:GetService("ReplicatedStorage").RemoteEvent:FireServer("SpecialTrainer","Formless")
+	end)
+	
+	UICorner_4.CornerRadius = UDim.new(0, 10)
+	UICorner_4.Parent = Formless
+	
+	Beast.Name = "Beast"
+	Beast.Parent = ScrollingFrame
+	Beast.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+	Beast.Position = UDim2.new(0.0119047621, 0, 0.152027026, 0)
+	Beast.Size = UDim2.new(0, 160, 0, 36)
+	Beast.Font = Enum.Font.Gotham
+	Beast.Text = "Beast"
+	Beast.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Beast.TextSize = 22.000
+	Beast.MouseButton1Down:connect(function()
+		game:GetService("ReplicatedStorage").RemoteEvent:FireServer("SpecialTrainer","Beast")
+	end)
+	
+	UICorner_5.CornerRadius = UDim.new(0, 10)
+	UICorner_5.Parent = Beast
+	
+	AdvancedKarate.Name = "AdvancedKarate"
+	AdvancedKarate.Parent = ScrollingFrame
+	AdvancedKarate.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+	AdvancedKarate.Position = UDim2.new(0.011904614, 0, 0.225032791, 0)
+	AdvancedKarate.Size = UDim2.new(0, 160, 0, 36)
+	AdvancedKarate.Font = Enum.Font.Gotham
+	AdvancedKarate.Text = "AdvancedKarate"
+	AdvancedKarate.TextColor3 = Color3.fromRGB(255, 255, 255)
+	AdvancedKarate.TextSize = 21.000
+	AdvancedKarate.MouseButton1Down:connect(function()
+		game:GetService("ReplicatedStorage").RemoteEvent:FireServer("SpecialTrainer","AdvancedKarate")
+	end)
+	
+	UICorner_6.CornerRadius = UDim.new(0, 10)
+	UICorner_6.Parent = AdvancedKarate
+	
+	SubBlink.Name = "SubBlink"
+	SubBlink.Parent = ScrollingFrame
+	SubBlink.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+	SubBlink.Position = UDim2.new(0.0082391724, 0, 0.297297299, 0)
+	SubBlink.Size = UDim2.new(0, 160, 0, 36)
+	SubBlink.Font = Enum.Font.Gotham
+	SubBlink.Text = "SubBlink"
+	SubBlink.TextColor3 = Color3.fromRGB(255, 255, 255)
+	SubBlink.TextSize = 21.000
+	SubBlink.MouseButton1Down:connect(function()
+		game:GetService("ReplicatedStorage").RemoteEvent:FireServer("SpecialTrainer","SubBlink")
+	end)
+	
+	UICorner_7.CornerRadius = UDim.new(0, 10)
+	UICorner_7.Parent = SubBlink
+	
+	UICorner_8.CornerRadius = UDim.new(0, 1000)
+	UICorner_8.Parent = ScrollingFrame
+	
+	Sung.Name = "Sung"
+	Sung.Parent = ScrollingFrame
+	Sung.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+	Sung.Position = UDim2.new(0.00823905598, 0, 0.369682968, 0)
+	Sung.Size = UDim2.new(0, 160, 0, 37)
+	Sung.Font = Enum.Font.Gotham
+	Sung.Text = "Sung"
+	Sung.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Sung.TextSize = 21.000
+	Sung.MouseButton1Down:connect(function()
+		game:GetService("ReplicatedStorage").RemoteEvent:FireServer("SpecialTrainer","Sung")
+	end)
+	
+	UICorner_9.CornerRadius = UDim.new(0, 10)
+	UICorner_9.Parent = Sung
+	
+	FireGod.Name = "FireGod"
+	FireGod.Parent = ScrollingFrame
+	FireGod.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+	FireGod.Position = UDim2.new(0.0082391724, 0, 0.442567527, 0)
+	FireGod.Size = UDim2.new(0, 160, 0, 36)
+	FireGod.Font = Enum.Font.Gotham
+	FireGod.Text = "Fire God"
+	FireGod.TextColor3 = Color3.fromRGB(255, 255, 255)
+	FireGod.TextSize = 21.000
+	FireGod.MouseButton1Down:connect(function()
+		game:GetService("ReplicatedStorage").RemoteEvent:FireServer("SpecialTrainer","Kagutsuchi")
+	end)
+	
+	UICorner_10.CornerRadius = UDim.new(0, 10)
+	UICorner_10.Parent = FireGod
+	
+	Advance.Name = "Advance"
+	Advance.Parent = ScrollingFrame
+	Advance.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+	Advance.Position = UDim2.new(0.0082391724, 0, 0.515202641, 0)
+	Advance.Size = UDim2.new(0, 160, 0, 36)
+	Advance.Font = Enum.Font.Gotham
+	Advance.Text = "Advance"
+	Advance.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Advance.TextSize = 21.000
+	Advance.MouseButton1Down:connect(function()
+		game:GetService("ReplicatedStorage").RemoteEvent:FireServer("SpecialTrainer","Advance")
+	end)
+	
+	UICorner_11.CornerRadius = UDim.new(0, 10)
+	UICorner_11.Parent = Advance
+	
+	Ryu.Name = "Ryu"
+	Ryu.Parent = ScrollingFrame
+	Ryu.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+	Ryu.Position = UDim2.new(0.0082391724, 0, 0.587837756, 0)
+	Ryu.Size = UDim2.new(0, 160, 0, 36)
+	Ryu.Font = Enum.Font.Gotham
+	Ryu.Text = "Ryu"
+	Ryu.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Ryu.TextSize = 21.000
+	Ryu.MouseButton1Down:connect(function()
+		game:GetService("ReplicatedStorage").RemoteEvent:FireServer("SpecialTrainer","Ryu")
+	end)
+	
+	UICorner_12.CornerRadius = UDim.new(0, 10)
+	UICorner_12.Parent = Ryu
+	
+	Samurai.Name = "Samurai"
+	Samurai.Parent = ScrollingFrame
+	Samurai.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+	Samurai.Position = UDim2.new(0.0082391724, 0, 0.66047287, 0)
+	Samurai.Size = UDim2.new(0, 160, 0, 36)
+	Samurai.Font = Enum.Font.Gotham
+	Samurai.Text = "Samurai"
+	Samurai.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Samurai.TextSize = 21.000
+	Samurai.MouseButton1Down:connect(function()
+		game:GetService("ReplicatedStorage").RemoteEvent:FireServer("SpecialTrainer","Nito-Ganryu")
+	end)
+	
+	UICorner_13.CornerRadius = UDim.new(0, 10)
+	UICorner_13.Parent = Samurai
+	
+	Songoku.Name = "Songoku"
+	Songoku.Parent = ScrollingFrame
+	Songoku.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+	Songoku.Position = UDim2.new(0.0082391724, 0, 0.733107984, 0)
+	Songoku.Size = UDim2.new(0, 160, 0, 36)
+	Songoku.Font = Enum.Font.Gotham
+	Songoku.Text = "Songoku"
+	Songoku.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Songoku.TextSize = 21.000
+	Songoku.MouseButton1Down:connect(function()
+		game:GetService("ReplicatedStorage").RemoteEvent:FireServer("SpecialTrainer","Songoku")
+	end)
+	
+	UICorner_14.CornerRadius = UDim.new(0, 10)
+	UICorner_14.Parent = Songoku
+	
+	UICorner_15.CornerRadius = UDim.new(0, 10)
+	UICorner_15.Parent = main
+	
+	A2.Name = "A2"
+	A2.Parent = main
+	A2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	A2.BackgroundTransparency = 1.000
+	A2.Position = UDim2.new(0.587301493, 0, -0.0371621624, 0)
+	A2.Size = UDim2.new(0, 200, 0, 61)
+	A2.Font = Enum.Font.Gotham
+	A2.Text = "Credit to JoJack#1826"
+	A2.TextColor3 = Color3.fromRGB(255, 255, 255)
+	A2.TextSize = 14.000
+	
+	UICorner_16.CornerRadius = UDim.new(0, 10)
+	UICorner_16.Parent = A2
+	
+	ToolEditor.Name = "ToolEditor"
+	ToolEditor.Parent = main
+	ToolEditor.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+	ToolEditor.Position = UDim2.new(0.371031761, 0, 0.219594598, 0)
+	ToolEditor.Size = UDim2.new(0, 309, 0, 36)
+	ToolEditor.Font = Enum.Font.Gotham
+	ToolEditor.Text = "Fixing"
+	ToolEditor.TextColor3 = Color3.fromRGB(255, 255, 255)
+	ToolEditor.TextSize = 22.000
+	Songoku.MouseButton1Down:connect(function()
+	    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/DevJackWCF/tool-editor/main/tool%20editor"))()
+	end)
+		
+	
+	UICorner_17.CornerRadius = UDim.new(0, 10)
+	UICorner_17.Parent = ToolEditor
+	
+	A3.Name = "A3"
+	A3.Parent = main
+	A3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	A3.BackgroundTransparency = 1.000
+	A3.Position = UDim2.new(0.331349194, 0, 0.0743243247, 0)
+	A3.Size = UDim2.new(0, 337, 0, 50)
+	A3.Font = Enum.Font.Gotham
+	A3.Text = "Misc:"
+	A3.TextColor3 = Color3.fromRGB(255, 255, 255)
+	A3.TextSize = 14.000
+	
+	UICorner_18.CornerRadius = UDim.new(0, 10)
+	UICorner_18.Parent = A3
+	
+	A4.Name = "A4"
+	A4.Parent = main
+	A4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	A4.BackgroundTransparency = 1.000
+	A4.Position = UDim2.new(0.36311096, 0, 0.793918908, 0)
+	A4.Size = UDim2.new(0, 316, 0, 36)
+	A4.Font = Enum.Font.Gotham
+	A4.Text = "POP     POP     POP"
+	A4.TextColor3 = Color3.fromRGB(255, 255, 255)
+	A4.TextSize = 24.000
+	
+	UICorner_19.CornerRadius = UDim.new(0, 10)
+	UICorner_19.Parent = A4
+	
+	A5.Name = "A5"
+	A5.Parent = main
+	A5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	A5.BackgroundTransparency = 1.000
+	A5.Position = UDim2.new(0.351190358, 0, 0.875741303, 0)
+	A5.Size = UDim2.new(0, 327, 0, 41)
+	A5.Font = Enum.Font.Gotham
+	A5.Text = ":)"
+	A5.TextColor3 = Color3.fromRGB(255, 255, 255)
+	A5.TextSize = 24.000
+	
+	UICorner_20.CornerRadius = UDim.new(0, 10)
+	UICorner_20.Parent = A5
+	
+	close.Name = "close"
+	close.Parent = main
+	close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	close.BackgroundTransparency = 1.000
+	close.Size = UDim2.new(0, 39, 0, 37)
+	close.Font = Enum.Font.SourceSans
+	close.Text = "X"
+	close.TextColor3 = Color3.fromRGB(255, 255, 255)
+	close.TextSize = 32.000
+	close.MouseButton1Down:connect(function()
+	 main.Visible = false
+	end)
+	
+	UICorner_21.CornerRadius = UDim.new(0, 10)
+	UICorner_21.Parent = close
+	
+	AutoChicken.Name = "AutoChicken"
+	AutoChicken.Parent = main
+	AutoChicken.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+	AutoChicken.Position = UDim2.new(0.369051576, 0, 0.361486495, 0)
+	AutoChicken.Size = UDim2.new(0, 160, 0, 36)
+	AutoChicken.Font = Enum.Font.Gotham
+	AutoChicken.Text = "AutoChicken"
+	AutoChicken.TextColor3 = Color3.fromRGB(255, 255, 255)
+	AutoChicken.TextSize = 22.000
+	AutoChicken.MouseButton1Down:connect(function()
+		while wait() do
+			for i, v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+				if v.Name == "Chicken" then
+					if not game.Players.LocalPlayer:FindFirstChild("XPBoost") and not game.Players.LocalPlayer.Character:FindFirstChild("Chicken") then
+						v.Parent = game.Players.LocalPlayer.Character
+						game.Players.LocalPlayer.Character:FindFirstChild("Chicken"):Activate()
+					end
+				end
+			end
+		end
+	end)
+	
+	UICorner_22.CornerRadius = UDim.new(0, 10)
+	UICorner_22.Parent = AutoChicken
+	
+	AutoChocolate.Name = "AutoChocolate"
+	AutoChocolate.Parent = main
+	AutoChocolate.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+	AutoChocolate.Position = UDim2.new(0.369051576, 0, 0.503378391, 0)
+	AutoChocolate.Size = UDim2.new(0, 160, 0, 36)
+	AutoChocolate.Font = Enum.Font.Gotham
+	AutoChocolate.Text = "AutoChocolate"
+	AutoChocolate.TextColor3 = Color3.fromRGB(255, 255, 255)
+	AutoChocolate.TextSize = 22.000
+	AutoChocolate.MouseButton1Down:connect(function()
+		while wait() do
+			for i, v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+				if v.Name == "Chocolate Shake" then
+					if not game.Players.LocalPlayer:FindFirstChild("XPBoost") and not game.Players.LocalPlayer.Character:FindFirstChild("Chocolate Shake") then
+						v.Parent = game.Players.LocalPlayer.Character
+						game.Players.LocalPlayer.Character:FindFirstChild("Chocolate Shake"):Activate()
+					end
+				end
+			end
+		end
+	end)
+	
+	UICorner_23.CornerRadius = UDim.new(0, 10)
+	UICorner_23.Parent = AutoChocolate
+	
+	AutoBuyChicken.Name = "AutoBuyChicken"
+	AutoBuyChicken.Parent = main
+	AutoBuyChicken.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+	AutoBuyChicken.Position = UDim2.new(0.701724887, 0, 0.361486495, 0)
+	AutoBuyChicken.Size = UDim2.new(0, 142, 0, 36)
+	AutoBuyChicken.Font = Enum.Font.Gotham
+	AutoBuyChicken.Text = "AutoBuy"
+	AutoBuyChicken.TextColor3 = Color3.fromRGB(255, 255, 255)
+	AutoBuyChicken.TextSize = 22.000
+	AutoBuyChicken.MouseButton1Down:connect(function()
+		local chickenpath = game.Workspace:FindFirstChild("Chicken $50", true).Parent["ClickDetector"]
+		coroutine.wrap(function()
+			while task.wait(.5) do
+				local s,e = pcall(function()
+					fireclickdetector(chickenpath, 4)
+				end) 
+			end
+		end)()
+	end)
+	
+	UICorner_24.CornerRadius = UDim.new(0, 10)
+	UICorner_24.Parent = AutoBuyChicken
+	
+	AutoBuyChocolate.Name = "AutoBuyChocolate"
+	AutoBuyChocolate.Parent = main
+	AutoBuyChocolate.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+	AutoBuyChocolate.Position = UDim2.new(0.701724887, 0, 0.503378391, 0)
+	AutoBuyChocolate.Size = UDim2.new(0, 142, 0, 36)
+	AutoBuyChocolate.Font = Enum.Font.Gotham
+	AutoBuyChocolate.Text = "AutoBuy"
+	AutoBuyChocolate.TextColor3 = Color3.fromRGB(255, 255, 255)
+	AutoBuyChocolate.TextSize = 22.000
+	AutoBuyChocolate.MouseButton1Down:connect(function()
+		local chocolatepath = game.Workspace:FindFirstChild("Chocolate Shake $50", true).Parent["ClickDetector"]
+		coroutine.wrap(function()
+			while task.wait(.5) do
+				local s,e = pcall(function()
+					fireclickdetector(chocolatepath, 4)
+				end) 
+			end
+		end)()
+	end)
+	
+	UICorner_25.CornerRadius = UDim.new(0, 10)
+	UICorner_25.Parent = AutoBuyChocolate
+	
+	AutoMango.Name = "AutoMango"
+	AutoMango.Parent = main
+	AutoMango.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+	AutoMango.Position = UDim2.new(0.369051576, 0, 0.648648679, 0)
+	AutoMango.Size = UDim2.new(0, 160, 0, 36)
+	AutoMango.Font = Enum.Font.Gotham
+	AutoMango.Text = "AutoMango"
+	AutoMango.TextColor3 = Color3.fromRGB(255, 255, 255)
+	AutoMango.TextSize = 22.000
+	AutoChicken.MouseButton1Down:connect(function()
+		while wait() do
+			for i, v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+				if v.Name == "Mango Shake" then
+					if not game.Players.LocalPlayer:FindFirstChild("EnergyBoost") and not game.Players.LocalPlayer.Character:FindFirstChild("Mango Shake") then
+						v.Parent = game.Players.LocalPlayer.Character
+						game.Players.LocalPlayer.Character:FindFirstChild("Mango Shake"):Activate()
+					end
+				end
+			end
+		end
+	end)
+	
+	UICorner_26.CornerRadius = UDim.new(0, 10)
+	UICorner_26.Parent = AutoMango
+	
+	AutoBuyMango.Name = "AutoBuyMango"
+	AutoBuyMango.Parent = main
+	AutoBuyMango.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+	AutoBuyMango.Position = UDim2.new(0.699744701, 0, 0.648648679, 0)
+	AutoBuyMango.Size = UDim2.new(0, 142, 0, 36)
+	AutoBuyMango.Font = Enum.Font.Gotham
+	AutoBuyMango.Text = "AutoBuy"
+	AutoBuyMango.TextColor3 = Color3.fromRGB(255, 255, 255)
+	AutoBuyMango.TextSize = 22.000
+	AutoBuyMango.MouseButton1Down:connect(function()
+		local chocolatepath = game.Workspace:FindFirstChild("Mango Shake $35", true).Parent["ClickDetector"]
+		coroutine.wrap(function()
+			while task.wait(.5) do
+				local s,e = pcall(function()
+					fireclickdetector(mangopath, 4)
+				end) 
+			end
+		end)()
+	end)
+	
+	UICorner_27.CornerRadius = UDim.new(0, 10)
+	UICorner_27.Parent = AutoBuyMango
+	
+end
+coroutine.wrap(UEQLKCS_fake_script)()
