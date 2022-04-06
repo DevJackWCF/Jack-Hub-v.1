@@ -503,7 +503,7 @@ AutoBuyMango.Text = "AutoBuy"
 AutoBuyMango.TextColor3 = Color3.fromRGB(255, 255, 255)
 AutoBuyMango.TextSize = 22.000
 AutoBuyMango.MouseButton1Down:connect(function()
-	local chocolatepath = game.Workspace:FindFirstChild("Mango Shake $35", true).Parent["ClickDetector"]
+	local mangopath = game.Workspace:FindFirstChild("Mango Shake $35", true).Parent["ClickDetector"]
 	coroutine.wrap(function()
 		while task.wait(.5) do
 			local s,e = pcall(function()
