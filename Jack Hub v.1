@@ -66,6 +66,8 @@ local deleterightleg = Instance.new("TextButton")
 local UICorner_31 = Instance.new("UICorner")
 local deleteleftleg = Instance.new("TextButton")
 local UICorner_32 = Instance.new("UICorner")
+local deleteclothes = Instance.new("TextButton")
+local UICorner_33 = Instance.new("UICorner")
 
 
 
@@ -170,7 +172,7 @@ AdvancedKarate.Text = "AdvancedKarate"
 AdvancedKarate.TextColor3 = Color3.fromRGB(255, 255, 255)
 AdvancedKarate.TextSize = 21.000
 AdvancedKarate.MouseButton1Down:connect(function()
-	game:GetService("ReplicatedStorage").RemoteEvent:FireServer("SpecialTrainer","AdvancedKarate")
+	game:GetService("ReplicatedStorage").RemoteEvent:FireServer("SpecialTrainer","MasteredKarate")
 end)
 
 UICorner_6.CornerRadius = UDim.new(0, 10)
@@ -612,3 +614,20 @@ end)
 
 UICorner_32.CornerRadius = UDim.new(0, 10)
 UICorner_32.Parent = deleteleftleg
+
+deleteclothes.Name = "delete clothes"
+deleteclothes.Parent = ScrollingFrame_2
+deleteclothes.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+deleteclothes.Position = UDim2.new(0.498282313, 0, 0.472081035, 0)
+deleteclothes.Size = UDim2.new(0, 142, 0, 36)
+deleteclothes.Font = Enum.Font.Gotham
+deleteclothes.Text = "delete clothes"
+deleteclothes.TextColor3 = Color3.fromRGB(255, 255, 255)
+deleteclothes.TextSize = 17.000
+deleteleftleg.MouseButton1Down:connect(function()
+	game:GetService'Players'.LocalPlayer.Character['Shirt']:Destroy()
+	game:GetService'Players'.LocalPlayer.Character['Pants']:Destroy()
+end)
+
+UICorner_33.CornerRadius = UDim.new(0, 10)
+UICorner_33.Parent = deleteclothes
