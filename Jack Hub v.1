@@ -68,6 +68,8 @@ local deleteleftleg = Instance.new("TextButton")
 local UICorner_32 = Instance.new("UICorner")
 local deleteclothes = Instance.new("TextButton")
 local UICorner_33 = Instance.new("UICorner")
+local infiniteyield = Instance.new("TextButton")
+local UICorner_34 = Instance.new("UICorner")
 
 
 
@@ -625,9 +627,25 @@ deleteclothes.Text = "delete clothes"
 deleteclothes.TextColor3 = Color3.fromRGB(255, 255, 255)
 deleteclothes.TextSize = 17.000
 deleteclothes.MouseButton1Down:connect(function()
-    game:GetService'Players'.LocalPlayer.Character['Shirt']:Destroy()
-    game:GetService'Players'.LocalPlayer.Character['Pants']:Destroy()
+	game:GetService'Players'.LocalPlayer.Character['Shirt']:Destroy()
+	game:GetService'Players'.LocalPlayer.Character['Pants']:Destroy()
 end)
 
 UICorner_33.CornerRadius = UDim.new(0, 10)
 UICorner_33.Parent = deleteclothes
+
+infiniteyield.Name = "infinite yield"
+infiniteyield.Parent = ScrollingFrame_2
+infiniteyield.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+infiniteyield.Position = UDim2.new(0.021359235, 0, 0.554589272, 0)
+infiniteyield.Size = UDim2.new(0, 142, 0, 36)
+infiniteyield.Font = Enum.Font.Gotham
+infiniteyield.Text = "infinite yield"
+infiniteyield.TextColor3 = Color3.fromRGB(255, 255, 255)
+infiniteyield.TextSize = 17.000
+infiniteyield.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
+UICorner_34.CornerRadius = UDim.new(0, 10)
+UICorner_34.Parent = infiniteyield
