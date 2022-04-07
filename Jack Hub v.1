@@ -624,7 +624,7 @@ deleteclothes.Font = Enum.Font.Gotham
 deleteclothes.Text = "delete clothes"
 deleteclothes.TextColor3 = Color3.fromRGB(255, 255, 255)
 deleteclothes.TextSize = 17.000
-deleteleftleg.MouseButton1Down:connect(function()
+deleteclothes.MouseButton1Down:connect(function()
 	game:GetService'Players'.LocalPlayer.Character['Shirt']:Destroy()
 	game:GetService'Players'.LocalPlayer.Character['Pants']:Destroy()
 end)
