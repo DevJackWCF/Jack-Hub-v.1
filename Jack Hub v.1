@@ -70,6 +70,14 @@ local deleteclothes = Instance.new("TextButton")
 local UICorner_33 = Instance.new("UICorner")
 local infiniteyield = Instance.new("TextButton")
 local UICorner_34 = Instance.new("UICorner")
+local autoequip200kg = Instance.new("TextButton")
+local UICorner_35 = Instance.new("UICorner")
+local autoequipsitup = Instance.new("TextButton")
+local UICorner_36 = Instance.new("UICorner")
+local autoequippushup = Instance.new("TextButton")
+local UICorner_37 = Instance.new("UICorner")
+local oldtatakaigui = Instance.new("TextButton")
+local UICorner_38 = Instance.new("UICorner")
 
 
 
@@ -644,8 +652,100 @@ infiniteyield.Text = "infinite yield"
 infiniteyield.TextColor3 = Color3.fromRGB(255, 255, 255)
 infiniteyield.TextSize = 17.000
 infiniteyield.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/DevJackWCF/IY/main/IY'),true))()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
 end)
 
 UICorner_34.CornerRadius = UDim.new(0, 10)
 UICorner_34.Parent = infiniteyield
+
+autoequip200kg.Name = "auto equip 200kg"
+autoequip200kg.Parent = ScrollingFrame_2
+autoequip200kg.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+autoequip200kg.Position = UDim2.new(0.498282313, 0, 0.552939117, 0)
+autoequip200kg.Size = UDim2.new(0, 142, 0, 36)
+autoequip200kg.Font = Enum.Font.Gotham
+autoequip200kg.Text = "auto equip 200kg"
+autoequip200kg.TextColor3 = Color3.fromRGB(255, 255, 255)
+autoequip200kg.TextSize = 17.000
+autoequip200kg.MouseButton1Down:connect(function()
+	local toolname = "200KG Dumbbell" -- replace with the name of the tool
+	local Plr = game:GetService("Players").LocalPlayer
+	while wait() do
+		pcall(function()
+			if Plr.Backpack:FindFirstChild(toolname) and Plr.Character:FindFirstChild(toolname) == nil then
+				local tool = Plr.Backpack:FindFirstChild(toolname)
+				Plr.Character.Humanoid:EquipTool(tool)
+			end
+		end)
+	end
+end)
+
+UICorner_35.CornerRadius = UDim.new(0, 10)
+UICorner_35.Parent = autoequip200kg
+
+autoequipsitup.Name = "auto equip situp"
+autoequipsitup.Parent = ScrollingFrame_2
+autoequipsitup.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+autoequipsitup.Position = UDim2.new(0.021359235, 0, 0.635447383, 0)
+autoequipsitup.Size = UDim2.new(0, 142, 0, 36)
+autoequipsitup.Font = Enum.Font.Gotham
+autoequipsitup.Text = "auto equip situp"
+autoequipsitup.TextColor3 = Color3.fromRGB(255, 255, 255)
+autoequipsitup.TextSize = 17.000
+autoequipsitup.MouseButton1Down:connect(function()
+	local toolname = "Situp" -- replace with the name of the tool
+	local Plr = game:GetService("Players").LocalPlayer
+	while wait() do
+		pcall(function()
+			if Plr.Backpack:FindFirstChild(toolname) and Plr.Character:FindFirstChild(toolname) == nil then
+				local tool = Plr.Backpack:FindFirstChild(toolname)
+				Plr.Character.Humanoid:EquipTool(tool)
+			end
+		end)
+	end
+end)
+
+UICorner_36.CornerRadius = UDim.new(0, 10)
+UICorner_36.Parent = autoequipsitup
+
+autoequippushup.Name = "auto equip pushup"
+autoequippushup.Parent = ScrollingFrame_2
+autoequippushup.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+autoequippushup.Position = UDim2.new(0.498282313, 0, 0.635447383, 0)
+autoequippushup.Size = UDim2.new(0, 142, 0, 36)
+autoequippushup.Font = Enum.Font.Gotham
+autoequippushup.Text = "auto equip pushup"
+autoequippushup.TextColor3 = Color3.fromRGB(255, 255, 255)
+autoequippushup.TextSize = 17.000
+autoequippushup.MouseButton1Down:connect(function()
+	local toolname = "Pushup" -- replace with the name of the tool
+	local Plr = game:GetService("Players").LocalPlayer
+	while wait() do
+		pcall(function()
+			if Plr.Backpack:FindFirstChild(toolname) and Plr.Character:FindFirstChild(toolname) == nil then
+				local tool = Plr.Backpack:FindFirstChild(toolname)
+				Plr.Character.Humanoid:EquipTool(tool)
+			end
+		end)
+	end
+end)
+
+
+UICorner_37.CornerRadius = UDim.new(0, 10)
+UICorner_37.Parent = autoequippushup
+
+oldtatakaigui.Name = "old tatakai gui"
+oldtatakaigui.Parent = ScrollingFrame_2
+oldtatakaigui.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+oldtatakaigui.Position = UDim2.new(0.021359235, 0, 0.706404507, 0)
+oldtatakaigui.Size = UDim2.new(0, 142, 0, 36)
+oldtatakaigui.Font = Enum.Font.Gotham
+oldtatakaigui.Text = "old tatakai gui"
+oldtatakaigui.TextColor3 = Color3.fromRGB(255, 255, 255)
+oldtatakaigui.TextSize = 17.000
+oldtatakaigui.MouseButton1Down:connect(function()
+	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/z4gs/scripts/master/tatakaiGui.lua"))()
+end)
+
+UICorner_38.CornerRadius = UDim.new(0, 10)
+UICorner_38.Parent = oldtatakaigui
