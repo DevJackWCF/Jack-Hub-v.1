@@ -1,0 +1,107 @@
+local JackHubV2 = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local AutoChicken = Instance.new("TextButton")
+local AutoChoco = Instance.new("TextButton")
+local AutoMango = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+
+JackHubV2.Name = "JackHub V.2"
+JackHubV2.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+JackHubV2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = JackHubV2
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.462852895, 0, 0.439809293, 0)
+Frame.Size = UDim2.new(0, 100, 0, 104)
+
+Title.Name = "Title"
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.Size = UDim2.new(0, 100, 0, 26)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "JackHub"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextSize = 14.000
+
+AutoChicken.Name = "AutoChicken"
+AutoChicken.Parent = Frame
+AutoChicken.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoChicken.Position = UDim2.new(0, 0, 0.25999999, 0)
+AutoChicken.Size = UDim2.new(0, 100, 0, 26)
+AutoChicken.Font = Enum.Font.SourceSans
+AutoChicken.Text = "Auto Chicken"
+AutoChicken.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutoChicken.TextSize = 14.000
+AutoChicken.MouseButton1Down:connect(function()
+	while wait() do
+		for i, v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+			if v.Name == "Chicken" then
+				if not game.Players.LocalPlayer:FindFirstChild("XPBoost") and not game.Players.LocalPlayer.Character:FindFirstChild("Chicken") then
+					v.Parent = game.Players.LocalPlayer.Character
+					game.Players.LocalPlayer.Character:FindFirstChild("Chicken"):Activate()
+				end
+			end
+		end
+	end
+end)
+
+
+AutoChoco.Name = "AutoChoco"
+AutoChoco.Parent = Frame
+AutoChoco.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoChoco.Position = UDim2.new(0, 0, 0.519999981, 0)
+AutoChoco.Size = UDim2.new(0, 100, 0, 26)
+AutoChoco.Font = Enum.Font.SourceSans
+AutoChoco.Text = "Auto Choco"
+AutoChoco.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutoChoco.TextSize = 14.000
+AutoChicken.MouseButton1Down:connect(function()
+	while wait() do
+		for i, v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+			if v.Name == "Chocolate Shake" then
+				if not game.Players.LocalPlayer:FindFirstChild("XPBoost") and not game.Players.LocalPlayer.Character:FindFirstChild("Chocolate Shake") then
+					v.Parent = game.Players.LocalPlayer.Character
+					game.Players.LocalPlayer.Character:FindFirstChild("Chocolate Shake"):Activate()
+				end
+			end
+		end
+	end
+end)
+
+
+AutoMango.Name = "AutoMango"
+AutoMango.Parent = Frame
+AutoMango.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoMango.Position = UDim2.new(0, 0, 0.780000031, 0)
+AutoMango.Size = UDim2.new(0, 100, 0, 26)
+AutoMango.Font = Enum.Font.SourceSans
+AutoMango.Text = "Auto Mango"
+AutoMango.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutoMango.TextSize = 14.000
+AutoChicken.MouseButton1Down:connect(function()
+	while wait() do
+		for i, v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+			if v.Name == "Mango Shake" then
+				if not game.Players.LocalPlayer:FindFirstChild("EnergyBoost") and not game.Players.LocalPlayer.Character:FindFirstChild("Mango Shake") then
+					v.Parent = game.Players.LocalPlayer.Character
+					game.Players.LocalPlayer.Character:FindFirstChild("Mango Shake"):Activate()
+				end
+			end
+		end
+	end
+end)
+
+
+Close.Name = "Close"
+Close.Parent = Frame
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.Position = UDim2.new(1, 0, 0, 0)
+Close.Size = UDim2.new(0, 20, 0, 20)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextSize = 14.000
+AutoChicken.MouseButton1Down:connect(function()
+	Frame.Visible = false
+end)
